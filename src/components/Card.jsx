@@ -2,7 +2,7 @@ import React from 'react';
 import { handleCompleteTodo, handleDeleteTodo } from '../helpers/todohelpers';
 import { FaTrashAlt, FaCheckCircle } from 'react-icons/fa'; 
 
-const Card = ({ todo, setRandomState }) => {
+function Card({ todo, setRandomState }) {
   return (
     <div
       style={{
@@ -27,8 +27,7 @@ const Card = ({ todo, setRandomState }) => {
             cursor: 'pointer',
             fontSize: '1rem',
           }}
-          title="Delete"
-        />
+          title="Delete" />
       </div>
 
       {/* Description */}
@@ -58,7 +57,7 @@ const Card = ({ todo, setRandomState }) => {
       )}
     </div>
   );
-};
+}
 
 export default Card;
 
